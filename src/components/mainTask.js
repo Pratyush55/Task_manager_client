@@ -58,9 +58,9 @@ const MainTask = () => {
     setFilteredTasks([...tasks, newTask]);
   };
 
-  const handleUpdateStatus = async (taskId) => {
+  const handleUpdateStatus = async (taskId,status) => {
     try {
-      const response = await axios.put(`http://localhost:5000/api/task/${taskId}`, { status: 'Done' });
+      const response = await axios.put(`http://localhost:5000/api/task/${taskId}`, { status: status });
       const updatedTask = response.data;
       const updatedTasks = tasks.map(task =>
         task._id === updatedTask._id ? updatedTask : task

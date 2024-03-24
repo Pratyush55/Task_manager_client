@@ -1,6 +1,6 @@
-// FilterDropdown.js
+
 import React from 'react';
-import './style.css'; // Import CSS file for styling
+import './style.css'; 
 
 const FilterDropdown = ({ statuses, onSelectStatus }) => {
   return (

@@ -14,8 +14,11 @@ const TaskForm = ({ onTaskCreated }) => {
       alert('Please enter a title for the task.');
       return;
     }
+    const user = JSON.parse(localStorage.getItem('user'))
+    const uid = user.data.uid
+
     try {
-      const response = await axios.post('http://localhost:5000/api/task', { title, description, status });
+      const response = await axios.post('http://localhost:5000/api/task', { title, description, status,uid });
       onTaskCreated(response.data);
       setTitle('');
       setDescription('');

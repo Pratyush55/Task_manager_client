@@ -1,0 +1,34 @@
+# Front-End Project
+
+Welcome to the front-end project! This project is built with [React](https://reactjs.org/) and is responsible for the user interface of our application.
+
+## Getting Started
+
+To get started with the front-end project, follow these steps:
+
+### Prerequisites
+
+- Node.js and npm installed on your machine.
+
+### Installation
+
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using npm:
+
+```bash
+npm install
+Development
+To start the development server, run the following command:
+
+bash
+Copy code
+npm start
+This will start the development server and open the application in your default web browser.
+
+Build
+To build the production-ready assets, run:
+
+bash
+Copy code
+npm run build
